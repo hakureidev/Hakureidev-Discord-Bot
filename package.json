@@ -11,6 +11,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start index.js --watch",
+    "deploy": "node deploy-commands.js",
+    "all": "npm run deploy && npm run start",
     "stop": "pm2 stop all"
   },
   "keywords": [],
